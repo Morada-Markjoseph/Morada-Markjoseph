@@ -140,7 +140,7 @@ a{
 }
 
 /*DESIGN*/
-@media(max-width: 700px){
+@media screen and (max-width: 700px){
     .navbar .links,
     .navbar .sign-in-btn,
     .navbar .sign-up-btn{
@@ -154,7 +154,7 @@ a{
     }
 }
 
-@media(max-width: 500px){
+@media screen and (max-width: 500px){
     .dropdown_menu{
         left: 2rem;
         width: unset;
@@ -517,7 +517,7 @@ h2 {
     background-repeat: no-repeat;
 }
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     .carreer ul {
         flex-wrap: wrap; 
     }
@@ -631,10 +631,12 @@ h2 {
     justify-content: space-around;
 }
 
-@media (max-width: 800px){
+@media screen and (max-width: 800px){
 
     .popular-job-list{
-        margin-right: 0;
+        position: relative;
+        transform: translateX(-50%);
+        left: 50%;
     }
 
     .job-list-nav ul{
@@ -648,12 +650,13 @@ h2 {
     .popular-job-list-container{
         display: flex;
         flex-direction: column;
-        margin-left: 100px;
+        justify-content: center;
+        align-items: center;
      }
 
    
 }
-@media (max-width: 1200px){
+@media screen and (max-width: 1200px){
     .job-list-and-popular{
         display: flex;
         flex-wrap: wrap;
@@ -779,7 +782,9 @@ footer{
 .contact-container{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     padding-bottom: 10rem;
+    margin-bottom: 120px;
 }
   
 .contact-title{
@@ -788,11 +793,6 @@ footer{
     color: white;
     padding-bottom: 5rem;
     font-size: 25px;
-}
-  
-.contact-details-container{
-    position: relative;
-    margin-left: 100px;  
 }
   
 .bold{
@@ -804,10 +804,7 @@ footer{
     margin-bottom: 3.5rem;
     font-size: 30px;
 }
-  
-.contact-us-icon{
-    padding-top: 3rem;
-}
+
   
 .n2, .n3{
     margin-left: 30px;
@@ -821,12 +818,10 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 512px;
+    width: 32rem;
     height: 420px;
     z-index: 2;
-    transform: translateX(-50%);
-    left: 40%;
-    padding-top: 8.5rem;
+    padding-top: 6.6rem;
 }
   
 .online-inquiry{
@@ -872,7 +867,6 @@ footer{
     position: relative;
     text-align: left;
     margin-left: 20px;
-    
     padding-bottom: 5rem;
 }
   
@@ -924,6 +918,12 @@ input[type="submit"]:active{
       flex-direction: column;
     }
 
+    .contact-details-container{
+      position: relative;
+      transform: translateX(-50%);
+      left: 50%;
+    }
+
     .online-inquiry-container{
       position: relative;
       transform: translateX(-50%);
@@ -935,9 +935,6 @@ input[type="submit"]:active{
       margin-top: 250px;
     }
 
-    .contact-us-icon{
-      padding-bottom: 100px;
-    }
 
     .contact-details-container{
       display: flex;

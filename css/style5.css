@@ -4,3 +4,11 @@
     z-index: 200;
     top: 150px
 }
+
+.background-color-2 {
+    background-image: url(../gallery/image1-90.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
